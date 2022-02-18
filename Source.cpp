@@ -178,12 +178,12 @@ void BulletDraw()
 		{
 			// 미사일을 그린다
 			bg[playerBullet[i].y][playerBullet[i].x - 1] = '-';
-			bg[playerBullet[i].y][playerBullet[i].x - 0] = '>';
+			bg[playerBullet[i].y][playerBullet[i].x + 0] = '>';
 			// 미사일 앞으로 +1 
 			playerBullet[i].x++;
 
 			//미사일이 80을 넘어갈 경우
-			if (playerBullet[i].x > 79)
+			if (playerBullet[i].x > 70)
 			{
 				//미사일 준비상태로 전환
 				playerBullet[i].fire = false;
